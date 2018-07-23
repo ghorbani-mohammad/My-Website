@@ -20,3 +20,9 @@ Route::get('/about', function () {
 Route::get('/projects', function () {
     return view('projects');
 });
+Route::get('/daftarMap',function(){
+    return view('dMap');
+});
+Route::get('/kargahMap',function(){
+    return view('kMap');
+});
