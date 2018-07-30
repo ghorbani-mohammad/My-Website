@@ -11,7 +11,7 @@ function init_map()
 	var myOptions = {zoom:16,center:new google.maps.LatLng(35.689720,51.424454),mapTypeId: google.maps.MapTypeId.ROADMAP};
 	map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
 	marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(35.689600,51.424422)});
-	infowindow = new google.maps.InfoWindow({content:'<br><strong>Kabir Sale Department</strong>'});
+	infowindow = new google.maps.InfoWindow({content:'<br><strong>Kabir Sales Department</strong>'});
 	google.maps.event.addListener(marker, 'click', function()
 	{
 		infowindow.open(map,marker);
