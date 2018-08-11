@@ -8,15 +8,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                <li id="home" class="nav-item">
+                    <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li id="projects" class="nav-item">
                     <a class="nav-link" href="/projects">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li id="about" class="nav-item">
                     <a class="nav-link" href="/about">About Me</a>
                 </li>
             </ul>

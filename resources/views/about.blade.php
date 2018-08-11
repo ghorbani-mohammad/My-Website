@@ -18,3 +18,9 @@
         </div>
     </div>
 @endsection
+
+@section('footer')
+<script>
+    $("#about").addClass("active");
+</script>
+@endsection
