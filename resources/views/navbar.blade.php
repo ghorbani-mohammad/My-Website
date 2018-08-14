@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <span class="navbar-brand text-primary" href="#">
-            <img src="images/m2.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/images/m2.png" width="30" height="30" class="d-inline-block align-top" alt="">
             M-GH
         </span>
 
