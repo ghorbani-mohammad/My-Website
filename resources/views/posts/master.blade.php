@@ -8,6 +8,12 @@
     <title>Mohammad Ghorbani</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <style>
+        .body{
+            font-family: Georgia,Times,Times New Roman,serif !important;
+            
+        }
+    </style>
     @yield('head')
 </head>
 <body>
