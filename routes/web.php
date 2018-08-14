@@ -27,3 +27,6 @@ Route::get('/daftarMap',function(){
 Route::get('/kargahMap',function(){
     return view('kMap');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
