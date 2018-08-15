@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Input;
 
 class PostController extends Controller
 {
@@ -47,6 +49,15 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //
+        // $validate = Validator::make(Input::all(), [
+        //     'title'=>'required',
+        //     'link'=>'required',
+        //     'body'=>'required',
+        //     'g-recaptcha-response' => 'required|captcha'
+        // ]);
+        // dd($request->all());
+        // dd(request());
+
         $this->validate(request(),[
             'title'=>'required',
             'link'=>'required',
@@ -169,8 +180,10 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy($post)
     {
         //
+        Post::where('link',$post)->first()->delete();
+        return redirect('/posts');
     }
 }

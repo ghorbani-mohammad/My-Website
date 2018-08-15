@@ -25,7 +25,8 @@
             <textarea id="body" name="body" class="summernote form-control">{{$post->body}}</textarea>
         </div>
         <div class="form-group">
-            <button class="btn btn-primary" type="submit">Edit</button>
+            <button class="btn btn-warning" type="submit" name="_method" value="PATCH">Edit</button>
+            <button class="btn btn-danger" type="submit" name="_method" value="DELETE">Delete</button>
         </div>
     </form>
 @endsection
