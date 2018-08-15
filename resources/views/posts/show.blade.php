@@ -23,7 +23,7 @@
 
 <div class="my-5">
     <a class="display-4" style="text-decoration: none;" href="/posts/{{$post->link}}">{{$post->title}}</a>
-    <div style="color: #999;">{!!$post->created_at->toFormattedDateString()!!}</div>
+    <div style="color: #abbbc0;">{!!$post->created_at->toFormattedDateString()!!}</div>
     <hr>
     <div class="mt-2 blog-body">
         {!!$post->body!!}

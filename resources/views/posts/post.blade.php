@@ -4,5 +4,5 @@
         {!!$post->body!!}
     </div>
     <hr class="mb-0">
-    <div style="font-size:0.9rem;">Published at<span style="color: #999;"> {!!$post->created_at->toFormattedDateString()!!}</span></div>
+    <div style="font-size:0.9rem; color:#abbbc0;">Published at<span style="color: #999;"> {!!$post->created_at->toFormattedDateString()!!}</span></div>
 </div>
