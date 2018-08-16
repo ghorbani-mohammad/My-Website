@@ -46,9 +46,11 @@
 
 @section('content')
 
+
+
 <div class="my-5">
     <a class="display-4" style="text-decoration: none;" href="/posts/{{$post->link}}">{{$post->title}}</a>
-    <div style="color: #abbbc0;">{!!$post->created_at->toFormattedDateString()!!}</div>
+    <div class="ml-3" style="color: #abbbc0;">{!!$post->created_at->toFormattedDateString()!!}</div>
     <hr>
 
 
@@ -62,7 +64,9 @@
     <div class="comment-body">
         <h2 class="display-4" >Comments</h2>
         <hr>
-
+        @if(Session::has('message'))
+            <div id="alert" class="alert {{ Session::get('alert-class') }}">{{ Session::get('message') }}</div>
+        @endif
         <form action="/posts/{{$post->link}}/comments" method="POST">
             @csrf
             @include('posts.errors')
@@ -76,7 +80,7 @@
 
         @foreach ($post->comments as $comment)
             @if($comment->publish)
-                <div class="alert alert-success comment-text">
+                <div class="alert alert-primary comment-text" id="comment{{$comment->id}}">
                 <span class="" style="color: black;">{{$comment->body}}</span>
                     <div class="text-right comment-date" style="color:#999;">
                         {{$comment->created_at->toFormattedDateString()}}
@@ -86,4 +90,23 @@
         @endforeach
     </div>
 </div>
+@endsection
+
+@section('footer')
+<script>
+    (function($){
+        window.onbeforeunload = function(e){    
+        window.name += ' [' + $(window).scrollTop().toString() + '[' + $(window).scrollLeft().toString();
+        };
+        $.maintainscroll = function() {
+        if(window.name.indexOf('[') > 0)
+        {
+        var parts = window.name.split('['); 
+        window.name = $.trim(parts[0]);
+        window.scrollTo(parseInt(parts[parts.length - 1]), parseInt(parts[parts.length - 2]));
+        }   
+        };  
+        $.maintainscroll();
+        })(jQuery);
+</script>
 @endsection

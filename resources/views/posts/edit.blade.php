@@ -23,13 +23,17 @@
         <div class="form-group">
             @if($post->type=='blog')
                 <label for="type">Type: <span class="lead text-success">(Blog selected)</span></label>
+                <select name="type" class="form-control" id="type">
+                    <option value="blog">Blog</option>
+                    <option value="proj">Project</option>
+            </select> 
             @else
                 <label for="type">Type: <span class="lead text-success">(Project selected)</span></label>
-            @endif
                 <select name="type" class="form-control" id="type">
-                        <option value="blog">Blog</option>
-                        <option value="proj">Project</option>
-                </select> 
+                    <option value="proj">Project</option>
+                    <option value="blog">Blog</option>
+            </select> 
+            @endif
             </div>
         <div class="form-group">
             <label for="body">Body:</label>
@@ -44,7 +48,7 @@
 
 @section('footer')
 
-<script src="/summernote/summernote-bs4.js"></script>    
+<script src="/summernote/summernote-bs4.js"></script>
  
 <script>
         $(document).ready(function() {
@@ -61,7 +65,7 @@
                     ['insert', ['link', 'picture','video']],
                     ['view', ['fullscreen', 'codeview', 'help']]
                 ],
-                fontNames: ['iransans','Sacramento', 'Tahoma', 'Comic Sans MS'],
+                fontNames: ['Georgia','iransans','Sacramento', 'Tahoma', 'Comic Sans MS'],
                 fontNamesIgnoreCheck: ['iransans','Sacramento'],
                 fontSizes: ['8', '9', '10', '11', '12', '14', '18', '24', '36', '48' , '64', '82', '150'],
                 height:200

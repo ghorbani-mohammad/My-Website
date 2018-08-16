@@ -6,13 +6,12 @@
             .post-body{
                 padding:0px 15%;
                 font-size: 1.4rem;
-                font-family: Georgia,Times,Times New Roman,serif; 
+                 
             }
         }
         @media screen and (min-width: 0px) and (max-width:480px) {
             .post-body{
                 padding:0px 2%;
-                font-family: Georgia,Times,Times New Roman,serif; 
                 font-size: 1.2rem;
             }
         }

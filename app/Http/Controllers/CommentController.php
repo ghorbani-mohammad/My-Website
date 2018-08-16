@@ -16,7 +16,8 @@ class CommentController extends Controller
         ]);
         $post=Post::where('link',$post)->first();  
         $post->addComment(request('body'));
-        return back();
+        // return back();
+        return redirect(url()->previous().'#alert');
     }
     public function control()
     {
@@ -43,25 +44,45 @@ class CommentController extends Controller
         {
 			$callbackQueryId=$update->callback_query->id;
             makeHTTPRequest('answerCallbackQuery',['callback_query_id'=>$callbackQueryId]);
+            $messageId = $update->callback_query->message->message_id;
             $item=$update->callback_query->data;
             $item=explode("_",$item);
-            $com=Comment::find($item[1]);
+            $comment=Comment::find($item[1]);
+
             if($item[0]=='0')
             {
-                $com->publish=0;
-                $com->save();
-                makeHTTPRequest('sendMessage',[
+                $comment->publish=0;
+                $comment->save();
+                makeHTTPRequest('editMessageText',[
                     'chat_id'=>110374168,
-                    'text'=>"نظر مورد نظر در وضعیت عدم تایید قرار گرفت ✅",
+                    'message_id'=>$messageId,
+                    'parse_mode'=>'html',   
+                    'text'=>"<b>".$comment->body."</b>\n\n❌ Comment Successfully Disapproved.",
+                    'reply_markup'=>json_encode([
+                        'inline_keyboard'=>[
+                            [
+                                ['text'=>"Approve",'callback_data'=>'1_'.$item[1]] //back from short or long definition
+                            ]
+                        ]
+                    ])
                 ]);
             }
             else if($item[0]=='1')
             {
-                $com->publish=1;
-                $com->save();
-                makeHTTPRequest('sendMessage',[
+                $comment->publish=1;
+                $comment->save();
+                makeHTTPRequest('editMessageText',[
                     'chat_id'=>110374168,
-                    'text'=>"نظر مورد نظر تایید شد ✅",
+                    'message_id'=>$messageId,
+                    'parse_mode'=>'html',   
+                    'text'=>"<b>".$comment->body."</b>\n\n✅ Comment Successfully Approved.",
+                    'reply_markup'=>json_encode([
+                        'inline_keyboard'=>[
+                            [
+                                ['text'=>"Disapprove",'callback_data'=>'0_'.$item[1]] //back from short or long definition
+                            ]
+                        ]
+                    ])
                 ]);
             }
             else{
@@ -72,7 +93,7 @@ class CommentController extends Controller
         {
             makeHTTPRequest('sendMessage',[
                 'chat_id'=>110374168,
-                'text'=>"❌ تنها روی باتن ها کلیک کنید ❌",
+                'text'=>"❌ ERROR ❌",
             ]);
 
         }

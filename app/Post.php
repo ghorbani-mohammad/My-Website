@@ -2,6 +2,7 @@
 
 namespace App;
 use \Log;
+use \Session;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,11 +18,14 @@ class Post extends Model
     }
     public function addComment($body)
     {
+        
         $comment=$this->comments()->create([
             'body' => $body,
             'publish' => 0,
             'post_id' => $this->id
         ]);        
+        Session::flash('message', 'Your Comment Will Publish After Inspection, Thanks.'); 
+        Session::flash('alert-class', 'alert-success'); 
         define('API_KEY','661968560:AAG0Izgk-fabybDKqNegqYe8jC0mQMQ_eAE');
         function makeHTTPRequest($method,$datas=[])
         {
@@ -46,8 +50,8 @@ class Post extends Model
             'reply_markup'=>json_encode([
                 'inline_keyboard'=>[
                         [
-                            ['text'=>"Publish",'callback_data'=>'1_'.$comment->id],
-                            // ['text'=>"Discard",'callback_data'=>'0_'.$comment->id]
+                            ['text'=>"Approve",'callback_data'=>'1_'.$comment->id],
+                            // ['text'=>"Delete",'callback_data'=>'0_'.$comment->id]
                         ]
                     ]
                 ])
