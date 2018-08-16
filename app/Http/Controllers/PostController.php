@@ -63,7 +63,6 @@ class PostController extends Controller
             'link'=>'required',
             'body'=>'required',
         ]);
-
  
         $dom = new \domdocument();
         $dom->loadHtml(mb_convert_encoding($request->body, 'HTML-ENTITIES', 'UTF-8'), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
