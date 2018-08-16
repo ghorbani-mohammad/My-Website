@@ -36,3 +36,4 @@ Route::resource('posts', 'PostController');
 
 
 Route::post('/posts/{post}/comments', 'CommentController@store');
+Route::post('/comments/bot.php', 'CommentController@control');
