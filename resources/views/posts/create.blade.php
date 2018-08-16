@@ -13,16 +13,24 @@
         @include('posts.errors')
         <div class="form-group">
             <label for="title">Title:</label>
-            <input type="text" class="form-control" id="title" name="title">
+            <input type="text" class="form-control" id="title" name="title" required>
         </div>
         <div class="form-group">
             <label for="link">Link:</label>
-            <input type="text" class="form-control" id="link" name="link">
+            <input type="text" class="form-control" id="link" name="link" required>
+        </div>
+        <div class="form-group">
+            <label for="type">Type</label>
+            <select name="type" class="form-control" id="type">
+                <option value="blog">Blog</option>
+                <option value="proj">Project</option>
+            </select> 
         </div>
         <div class="form-group">
             <label for="body">Body:</label>
-            <textarea id="body" name="body" class="summernote form-control"></textarea>
+            <textarea id="body" name="body" class="summernote form-control" required></textarea>
         </div>
+
         <div class="form-group">
             <button class="btn btn-primary" type="submit">Publish</button>
         </div>

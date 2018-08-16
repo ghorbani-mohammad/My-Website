@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,21 +12,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::view('/','index');
+Route::view('/about','about');
+Route::get('/projects',function(){
+    $posts=Post::where('type','proj')->latest()->get();
+    return view('posts.projects',compact('posts'));
+
 });
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/projects', function () {
-    return view('projects');
-});
-Route::get('/daftarMap',function(){
-    return view('dMap');
-});
-Route::get('/kargahMap',function(){
-    return view('kMap');
-});
+Route::view('/daftarMap','dMap');
+Route::view('/kargahMap','kMap');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

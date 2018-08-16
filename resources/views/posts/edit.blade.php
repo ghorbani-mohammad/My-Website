@@ -21,6 +21,17 @@
             <input type="text" class="form-control" id="link" name="link" value="{{$post->link}}" readonly>
         </div>
         <div class="form-group">
+            @if($post->type=='blog')
+                <label for="type">Type: <span class="lead text-success">(Blog selected)</span></label>
+            @else
+                <label for="type">Type: <span class="lead text-success">(Project selected)</span></label>
+            @endif
+                <select name="type" class="form-control" id="type">
+                        <option value="blog">Blog</option>
+                        <option value="proj">Project</option>
+                </select> 
+            </div>
+        <div class="form-group">
             <label for="body">Body:</label>
             <textarea id="body" name="body" class="summernote form-control">{{$post->body}}</textarea>
         </div>

@@ -18,7 +18,7 @@ class PostController extends Controller
     public function index()
     {
         //
-        $posts=Post::latest()->get();
+        $posts=Post::where('type','blog')->latest()->get();
         return view('posts.index',compact('posts'));
         dd($posts);
     }
@@ -48,16 +48,6 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $validate = Validator::make(Input::all(), [
-        //     'title'=>'required',
-        //     'link'=>'required',
-        //     'body'=>'required',
-        //     'g-recaptcha-response' => 'required|captcha'
-        // ]);
-        // dd($request->all());
-        // dd(request());
-
         $this->validate(request(),[
             'title'=>'required',
             'link'=>'required',
@@ -65,7 +55,9 @@ class PostController extends Controller
         ]);
  
         $dom = new \domdocument();
+        libxml_use_internal_errors(true);
         $dom->loadHtml(mb_convert_encoding($request->body, 'HTML-ENTITIES', 'UTF-8'), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        libxml_clear_errors();
         $images = $dom->getelementsbytagname('img');
  
         foreach($images as $k => $img){
@@ -89,6 +81,7 @@ class PostController extends Controller
         $post= new Post;
         $post->title=request('title');
         $post->link=request('link');
+        $post->type=request('type');
         $post->body=$detail;
         $post->save();
         return redirect('/posts/'.$post->link);
@@ -168,6 +161,7 @@ class PostController extends Controller
         $post=Post::where('link',$post)->first();
         $post->title=request('title');
         $post->link=request('link');
+        $post->type=request('type');
         $post->body=$detail;
         $post->save();
         return redirect('/posts/'.$post->link);

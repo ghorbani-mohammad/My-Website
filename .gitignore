@@ -1,5 +1,7 @@
 /node_modules
 /public/images
+/public/videos
+/public/mp3
 /public/hot
 /public/storage
 /storage/*.key
