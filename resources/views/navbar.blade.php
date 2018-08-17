@@ -14,7 +14,7 @@
                     <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li id="weblog" class="nav-item">
-                    <a class="nav-link" href="/posts">Blog</a>
+                    <a class="nav-link" href="/blog">Blog</a>
                 </li>
                 <li id="projects" class="nav-item">
                     <a class="nav-link" href="/projects">Projects</a>

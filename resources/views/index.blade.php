@@ -4,14 +4,23 @@
 <style>
     @font-face {
         font-family: iransans;
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
         src: url(fonts/IRANSans-web.woff2);
     }
     @font-face {
-        font-family: iransans-light;
+        font-family: iransans;
+        font-style: normal;
+        font-weight: lighter;
+        font-display: swap;
         src: url(fonts/IRANSans-Light-web.woff2);
     }
     @font-face {
-        font-family: iransans-bold;
+        font-family: iransans;
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
         src: url(fonts/IRANSans-Bold-web.woff2);
     }
 </style>
@@ -31,7 +40,7 @@
 از آدمای شهر بیزارم 
 چون با یکیشون خاطره دارم 
 به من نگو با عشق بی رحمی 
-من <span class="text-danger" style="iransans-bold"><strong>زخم</strong></span> دارم تو نمی فهمی 
+من <span class="text-danger" style="font-family: iransans;font-weight: bold;">زخم</span> دارم تو نمی فهمی 
 ... 
             </p>
             <audio controls style="max-width:400px; width: 90%;">

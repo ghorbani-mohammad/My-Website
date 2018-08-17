@@ -28,7 +28,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('posts', 'PostController');
-
+Route::get('blog','PostController@index');
 
 Route::post('/posts/{post}/comments', 'CommentController@store');
 Route::post('/comments/bot.php', 'CommentController@control');
