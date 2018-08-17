@@ -8,6 +8,11 @@
     <title>Mohammad Ghorbani</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
     @yield('head')
+    <style>
+        a{
+            text-decoration: none !important;
+        }
+    </style>
 </head>
 <body>
 

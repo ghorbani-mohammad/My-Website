@@ -16,7 +16,6 @@ class CommentController extends Controller
         ]);
         $post=Post::where('link',$post)->first();  
         $post->addComment(request('body'));
-        // return back();
         return redirect(url()->previous().'#alert');
     }
     public function control()

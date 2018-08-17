@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mohammad Ghorbani</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
-    {{--  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">  --}}
     <style>
-        .body{
-            font-family: Georgia,Times,Times New Roman,serif !important;
+        a{
+            text-decoration: none !important;
         }
     </style>
     @yield('head')

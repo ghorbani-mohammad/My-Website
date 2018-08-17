@@ -19,6 +19,7 @@ class CreatePostsTable extends Migration
             $table->text('link');
             $table->longText('body');
             $table->string('type',5);   
+            $table->integer('countComments');
             $table->timestamps();
         });
     }

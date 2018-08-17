@@ -42,6 +42,7 @@
             max-width:90% !important;
     }   
 </style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 @endsection
 
 @section('content')
@@ -61,8 +62,15 @@
 
 
 
-    <div class="comment-body">
-        <h2 class="display-4" >Comments</h2>
+    <div class="comment-body" id="comments">
+        <div class="row">
+            <h2 class="col display-4" >Comments</h2>
+            <div class="col text-right mr-3 mt-3 mt-sm-0" >
+                <span style="position: absolute; bottom: 0;">
+                        <div class="row"><a href=""><i class="far fa-comment"></i> {!!$post->countComments!!}</a></div>
+                </span>
+            </div>
+        </div>
         <hr>
         @if(Session::has('message'))
             <div id="alert" class="alert {{ Session::get('alert-class') }}">{{ Session::get('message') }}</div>
