@@ -24,8 +24,7 @@ class Post extends Model
             'publish' => 0,
             'post_id' => $this->id
         ]);
-        $this->countComments=$this->countComments+1;
-        $this->save();   
+        
         Session::flash('message', 'Your Comment Will Publish After Inspection, Thanks.'); 
         Session::flash('alert-class', 'alert-success'); 
         define('API_KEY','661968560:AAG0Izgk-fabybDKqNegqYe8jC0mQMQ_eAE');

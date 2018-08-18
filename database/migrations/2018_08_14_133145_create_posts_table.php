@@ -18,8 +18,9 @@ class CreatePostsTable extends Migration
             $table->text('title');
             $table->text('link');
             $table->longText('body');
-            $table->string('type',5);   
-            $table->integer('countComments');
+            $table->string('type',5)->default('proj');   
+            $table->string('status',10)->default('preview');
+            $table->integer('countComments')->default(0);
             $table->timestamps();
         });
     }

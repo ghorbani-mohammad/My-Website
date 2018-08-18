@@ -14,11 +14,7 @@ use App\Post;
 
 Route::view('/','index');
 Route::view('/about','about');
-Route::get('/projects',function(){
-    $posts=Post::where('type','proj')->latest()->get();
-    return view('posts.projects',compact('posts'));
-
-});
+Route::get('/projects','PostController@projects');
 Route::view('/daftarMap','dMap');
 Route::view('/kargahMap','kMap');
 

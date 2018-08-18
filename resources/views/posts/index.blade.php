@@ -34,3 +34,9 @@
         @endif
     @endforeach
 @endsection
+
+@section('footer')
+<script>
+    $("#weblog").addClass("active");
+</script>
+@endsection

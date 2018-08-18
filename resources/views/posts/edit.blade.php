@@ -40,6 +40,21 @@
             <textarea id="body" name="body" class="summernote form-control">{{$post->body}}</textarea>
         </div>
         <div class="form-group">
+            @if($post->status=='publish')
+                <label for="status">Status: <span class="lead text-success">(Publish selected)</span></label>
+                <select name="status" class="form-control" id="status">
+                    <option value="publish">Publish</option>
+                    <option value="preview">Preview</option>
+                </select> 
+            @elseif($post->status=='preview')
+                <label for="status">Status: <span class="lead text-success">(Preview selected)</span></label>
+                <select name="status" class="form-control" id="status">
+                    <option value="preview">Preview</option>
+                    <option value="publish">Publish</option>
+                </select> 
+            @endif
+        </div>
+        <div class="form-group">
             <button class="btn btn-warning" type="submit" name="_method" value="PATCH">Edit</button>
             <button class="btn btn-danger" type="submit" name="_method" value="DELETE">Delete</button>
         </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Comment;
+use \Log;
 
 class CommentController extends Controller
 {
@@ -47,9 +48,10 @@ class CommentController extends Controller
             $item=$update->callback_query->data;
             $item=explode("_",$item);
             $comment=Comment::find($item[1]);
-
             if($item[0]=='0')
             {
+                $comment->post->countComments=$comment->post->countComments-1;
+                $comment->post->save();
                 $comment->publish=0;
                 $comment->save();
                 makeHTTPRequest('editMessageText',[
@@ -68,6 +70,8 @@ class CommentController extends Controller
             }
             else if($item[0]=='1')
             {
+                $comment->post->countComments=$comment->post->countComments+1;
+                $comment->post->save();
                 $comment->publish=1;
                 $comment->save();
                 makeHTTPRequest('editMessageText',[

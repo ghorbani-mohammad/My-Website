@@ -20,7 +20,7 @@
             <input type="text" class="form-control" id="link" name="link" required>
         </div>
         <div class="form-group">
-            <label for="type">Type</label>
+            <label for="type">Type:</label>
             <select name="type" class="form-control" id="type">
                 <option value="blog">Blog</option>
                 <option value="proj">Project</option>
@@ -30,7 +30,13 @@
             <label for="body">Body:</label>
             <textarea id="body" name="body" class="summernote form-control" required></textarea>
         </div>
-
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select name="status" class="form-control" id="status">
+                <option value="publish">Publish</option>
+                <option value="preview">Preview</option>
+            </select> 
+        </div>
         <div class="form-group">
             <button class="btn btn-primary" type="submit">Publish</button>
         </div>

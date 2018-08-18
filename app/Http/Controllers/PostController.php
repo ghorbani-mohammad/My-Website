@@ -18,9 +18,11 @@ class PostController extends Controller
     public function index()
     {
         //
-        $posts=Post::where('type','blog')->latest()->get();
+        if (Auth::check() && Auth::user()->role=='admin')
+            $posts=Post::where('type','blog')->latest()->get();
+        else
+            $posts=Post::where('type','blog')->where('status','publish')->latest()->get();      
         return view('posts.index',compact('posts'));
-        dd($posts);
     }
 
     /**
@@ -64,8 +66,13 @@ class PostController extends Controller
             $data = $img->getattribute('src');
             $filename=$img->getattribute('data-filename');
  
-            list($type, $data) = explode(';', $data);
-            list(, $data)      = explode(',', $data);
+            if(strpos($data, ';') !== false)
+            {
+                list($type, $data) = explode(';', $data);
+                list(, $data)      = explode(',', $data);
+            }
+            else
+                continue;
  
             $data = base64_decode($data);
             $image_name= time().'_'.$k.'_'.$filename;
@@ -82,6 +89,7 @@ class PostController extends Controller
         $post->title=request('title');
         $post->link=request('link');
         $post->type=request('type');
+        $post->status=request('status');
         $post->body=$detail;
         $post->save();
         return redirect('/posts/'.$post->link);
@@ -96,7 +104,20 @@ class PostController extends Controller
     public function show($post)
     {
         $post=Post::where('link',$post)->first();
-        return view('posts.show',compact('post'));
+        if($post->status=='preview')
+        {
+            if (Auth::check() && Auth::user()->role=='admin') 
+            {
+                return view('posts.show',compact('post'));
+            }
+            else {
+                return redirect('/');
+            }
+        }
+        else if ($post->status=='publish')
+        {
+            return view('posts.show',compact('post'));
+        }
     }
 
     /**
@@ -162,6 +183,7 @@ class PostController extends Controller
         $post->title=request('title');
         $post->link=request('link');
         $post->type=request('type');
+        $post->status=request('status');
         $post->body=$detail;
         $post->save();
         return redirect('/posts/'.$post->link);
@@ -176,7 +198,24 @@ class PostController extends Controller
     public function destroy($post)
     {
         //
-        Post::where('link',$post)->first()->delete();
-        return redirect('/posts');
+        $post=Post::where('link',$post)->first();
+        if($post->type=='blog')
+        {
+            $post->delete();
+            return redirect('/blog');
+        }
+        else if($post->type=='proj')
+        {
+            $post->delete();
+            return redirect('/projects');
+        }
+    }
+    public function projects()
+    {
+        if (Auth::check() && Auth::user()->role=='admin')
+            $posts=Post::where('type','proj')->latest()->get();
+        else
+            $posts=Post::where('type','proj')->where('status','publish')->latest()->get();      
+        return view('posts.projects',compact('posts'));
     }
 }

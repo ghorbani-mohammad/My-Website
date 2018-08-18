@@ -41,3 +41,9 @@
         @endif
     @endforeach
 @endsection
+
+@section('footer')
+<script>
+    $("#projects").addClass("active");
+</script>
+@endsection
