@@ -48,9 +48,20 @@ class CommentController extends Controller
             $item=$update->callback_query->data;
             $item=explode("_",$item);
             $comment=Comment::find($item[1]);
+            $counter=1;
+            $subChilds=array();
+            array_push($subChilds,$comment->id);
+            while($last=array_pop($subChilds))
+            {
+                foreach (Comment::where('replyTo',$last)->where('publish',1)->get() as $subCom) 
+                {
+                    $counter++;
+                    array_push($subChilds,$subCom->id);
+                }
+            }
             if($item[0]=='0')
             {
-                $comment->post->countComments=$comment->post->countComments-1;
+                $comment->post->countComments=$comment->post->countComments-$counter;
                 $comment->post->save();
                 $comment->publish=0;
                 $comment->save();
@@ -70,7 +81,7 @@ class CommentController extends Controller
             }
             else if($item[0]=='1')
             {
-                $comment->post->countComments=$comment->post->countComments+1;
+                $comment->post->countComments=$comment->post->countComments+$counter;
                 $comment->post->save();
                 $comment->publish=1;
                 $comment->save();
