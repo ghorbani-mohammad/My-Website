@@ -1,6 +1,24 @@
 @extends('posts.master')
 
 @section('head')
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>
+    function test(id,text,self)
+    {
+        parent=$('#comment'+id);
+        parent.append(text);
+        child=$('#comment'+self);
+        if(parent.hasClass('alert-primary'))
+        {
+            child.addClass("alert-secondary");
+        }
+        else if(parent.hasClass('alert-secondary'))
+        {
+            child.addClass("alert-primary");
+        }
+        
+    }
+</script>
 <style>
     ::placeholder { /* Most modern browsers support this now. */
         color:    #74b9ff !important;
@@ -88,12 +106,21 @@
 
         @foreach ($post->comments as $comment)
             @if($comment->publish)
-                <div class="alert alert-primary comment-text" id="comment{{$comment->id}}">
-                <span class="" style="color: black;">{{$comment->body}}</span>
-                    <div class="text-right comment-date" style="color:#999;">
-                        {{$comment->created_at->toFormattedDateString()}}
+                @if(@isset($comment->replyTo))
+                    <script>
+                        htmlText='<div class="alert mt-2 comment-text" id="comment{{$comment->id}}"><div style="color: black;">{{$comment->body}}</div><div class="mt-2 d-flex justify-content-between align-items-end comment-date" style="color:#999;"><div class="d-inline"><button id="{{$comment->id}}" href="" class="reply btn btn-secondary btn-sm">Reply</button></div><div class="d-inline">{{$comment->created_at->toFormattedDateString()}}</div></div><div id="c{{$comment->id}}"></div></div>';
+                        test({{$comment->replyTo}},htmlText,{{$comment->id}}); 
+                    </script>
+                @else
+                    <div class="alert alert-primary comment-text" id="comment{{$comment->id}}">
+                        <div style="color: black;">{{$comment->body}}</div>
+                        <div class="mt-2 d-flex justify-content-between align-items-end comment-date" style="color:#999;">
+                            <div class="d-inline"><button id="{{$comment->id}}" href="" class="reply btn btn-secondary btn-sm">Reply</button></div>
+                            <div class="d-inline">{{$comment->created_at->toFormattedDateString()}}</div>
+                        </div>
+                        <div id="c{{$comment->id}}"></div>
                     </div>
-                </div>
+                @endif
             @endif
         @endforeach
     </div>
@@ -102,19 +129,11 @@
 
 @section('footer')
 <script>
-    (function($){
-        window.onbeforeunload = function(e){    
-        window.name += ' [' + $(window).scrollTop().toString() + '[' + $(window).scrollLeft().toString();
-        };
-        $.maintainscroll = function() {
-        if(window.name.indexOf('[') > 0)
-        {
-        var parts = window.name.split('['); 
-        window.name = $.trim(parts[0]);
-        window.scrollTo(parseInt(parts[parts.length - 1]), parseInt(parts[parts.length - 2]));
-        }   
-        };  
-        $.maintainscroll();
-        })(jQuery);
+    $('.reply').click(function(){
+        divId=$(this).attr('id');
+        replyHtml2='<form class="mt-2" action="/posts/{{$post->link}}/comments" method="POST">@csrf <input type="hidden" name="childComment" value="true"> <input type="hidden" name="parent" value="'+divId+'"> @include("posts.errors")<div class="form-group"><textarea id="body" name="body" class="form-control w-100" required></textarea></div><div class="form-group"><button class="btn btn-secondary btn-sm" type="submit">Reply</button></div></form>';
+        $(this).remove();
+        $("#c"+divId).html(replyHtml2);
+    });
 </script>
 @endsection

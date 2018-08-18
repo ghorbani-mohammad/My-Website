@@ -16,15 +16,30 @@ class Post extends Model
     {
         return $this->hasMany(Comment::class);
     }
-    public function addComment($body)
+    public function addComment($req)
     {
-        
-        $comment=$this->comments()->create([
-            'body' => $body,
-            'publish' => 0,
-            'post_id' => $this->id
-        ]);
-        
+        Log::info('here2');
+        Log::info($req);
+        $comment='';
+        if(request()->has('parent'))
+        {
+            Log::info('parent');
+            Log::info($req["parent"]);
+            $comment=$this->comments()->create([
+                'body' => $req["body"],
+                'publish' => 0,
+                'post_id' => $this->id,
+                'replyTo' =>$req["parent"]
+            ]);
+        }
+        else
+        {
+            $comment=$this->comments()->create([
+                'body' => $req["body"],
+                'publish' => 0,
+                'post_id' => $this->id
+            ]);
+        }
         Session::flash('message', 'Your Comment Will Publish After Inspection, Thanks.'); 
         Session::flash('alert-class', 'alert-success'); 
         define('API_KEY','661968560:AAG0Izgk-fabybDKqNegqYe8jC0mQMQ_eAE');
@@ -46,7 +61,7 @@ class Post extends Model
         }  
         makeHTTPRequest('sendMessage',[
             'chat_id'=>110374168,
-            'text'=>"📢✉️New Comment:\n\n<b>".$body."</b>",
+            'text'=>"📢✉️New Comment:\n\n<b>".$req["body"]."</b>",
             'parse_mode'=>'html',
             'reply_markup'=>json_encode([
                 'inline_keyboard'=>[
