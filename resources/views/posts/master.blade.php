@@ -8,16 +8,45 @@
     <title>Mohammad Ghorbani</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
     <style>
-        a{
-            text-decoration: none !important;
+        .display-4{
+            font-size: 2rem;
         }
+        @media screen and (min-width: 480px) {
+            .post-body{
+                padding:0px 15%;
+                font-size: 1.4rem;
+                font-family: Georgia,Times,Times New Roman,serif; 
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width:480px) {
+            .post-body{
+                padding:0px 2%;
+                font-family: Georgia,Times,Times New Roman,serif; 
+                font-size: 1.2rem;
+            }
+            .post-img{
+                width: 80px;
+                height: 80px;
+            }
+            .post-title{
+                font-size: 1.2rem !important;
+            }
+        }
+        .post-body img{
+                max-width:90% !important;
+    
+        }   
+        video{
+            width: 90%;
+        }
+        
     </style>
     @yield('head')
 </head>
 <body>
 
     @include('navbar')
-
+    
     <div class="container" style="margin-top: 10px;min-height: 85vh;">
         @yield('content')
     </div>

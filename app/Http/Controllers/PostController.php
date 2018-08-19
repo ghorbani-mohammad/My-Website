@@ -53,6 +53,7 @@ class PostController extends Controller
         $this->validate(request(),[
             'title'=>'required',
             'link'=>'required',
+            'description'=>'required',
             'body'=>'required',
         ]);
  
@@ -61,6 +62,7 @@ class PostController extends Controller
         $dom->loadHtml(mb_convert_encoding($request->body, 'HTML-ENTITIES', 'UTF-8'), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
         libxml_clear_errors();
         $images = $dom->getelementsbytagname('img');
+        $mainImage='';
  
         foreach($images as $k => $img){
             $data = $img->getattribute('src');
@@ -82,6 +84,8 @@ class PostController extends Controller
  
             $img->removeattribute('src');
             $img->setattribute('src','/images/uploaded/'.$image_name);
+            if($k==0)
+                $mainImage='/images/uploaded/'.$image_name;
         }
  
         $detail = $dom->savehtml($dom->documentElement);
@@ -89,6 +93,8 @@ class PostController extends Controller
         $post->title=request('title');
         $post->link=request('link');
         $post->type=request('type');
+        $post->description=request('description');
+        $post->mainImage=$mainImage;
         $post->status=request('status');
         $post->body=$detail;
         $post->save();
@@ -151,6 +157,7 @@ class PostController extends Controller
         $this->validate(request(),[
             'title'=>'required',
             'link'=>'required',
+            'description'=>'required',
             'body'=>'required',
         ]);
 
@@ -158,6 +165,7 @@ class PostController extends Controller
         $dom = new \domdocument();
         $dom->loadHtml(mb_convert_encoding($request->body, 'HTML-ENTITIES', 'UTF-8'), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
         $images = $dom->getelementsbytagname('img');
+        $mainImage='';
         foreach($images as $k => $img){
             $data = $img->getattribute('src');
             $filename=$img->getattribute('data-filename');
@@ -167,7 +175,11 @@ class PostController extends Controller
                 list(, $data)      = explode(',', $data);
             }
             else
+            {
+                if($k==0)
+                $mainImage=$data;
                 continue;
+            }
             $data = base64_decode($data);
             $image_name= time().'_'.$k.'_'.$filename;
             $path = public_path() .'/images/uploaded/'. $image_name;
@@ -176,12 +188,17 @@ class PostController extends Controller
  
             $img->removeattribute('src');
             $img->setattribute('src','/images/uploaded/'.$image_name);
+
+            if($k==0)
+                $mainImage='/images/uploaded/'.$image_name;
         }
-        
         $detail = $dom->savehtml($dom->documentElement);
         $post=Post::where('link',$post)->first();
         $post->title=request('title');
         $post->link=request('link');
+        $post->description=request('description');
+
+        $post->mainImage=$mainImage;
         $post->type=request('type');
         $post->status=request('status');
         $post->body=$detail;

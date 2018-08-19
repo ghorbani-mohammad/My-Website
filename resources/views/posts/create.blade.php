@@ -20,6 +20,10 @@
             <input type="text" class="form-control" id="link" name="link" required>
         </div>
         <div class="form-group">
+            <label for="description">Description: <span style="font-size: 1rem;" class="lead text-success">(Max Length is 100)</span></label>
+            <input maxlength="100" type="text" class="form-control" id="description" name="description" required>
+        </div>
+        <div class="form-group">
             <label for="type">Type:</label>
             <select name="type" class="form-control" id="type">
                 <option value="blog">Blog</option>

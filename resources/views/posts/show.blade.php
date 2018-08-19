@@ -59,6 +59,9 @@
     .blog-body img{
             max-width:90% !important;
     }   
+    .display-4{
+    font-size: 3.5rem !important;
+    }
 </style>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 @endsection
@@ -69,7 +72,7 @@
 
 <div class="my-5">
     <a class="display-4" style="text-decoration: none;" href="/posts/{{$post->link}}">{{$post->title}}</a>
-    <div class="ml-3" style="color: #abbbc0;">{!!$post->created_at->toFormattedDateString()!!}</div>
+    <div class="ml-1" style="color: #0fb39e; font-size: 0.8rem;">{!!$post->created_at->toFormattedDateString()!!}</div>
     <hr>
 
 

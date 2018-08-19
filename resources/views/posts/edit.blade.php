@@ -21,6 +21,10 @@
             <input type="text" class="form-control" id="link" name="link" value="{{$post->link}}" readonly>
         </div>
         <div class="form-group">
+                <label for="description">Description: <span style="font-size: 1rem;" class="lead text-success">(Max Length is 100)</span></label>
+                <input maxlength="100" type="text" class="form-control" value="{{$post->description}}" id="description" name="description" required>
+            </div>
+        <div class="form-group">
             @if($post->type=='blog')
                 <label for="type">Type: <span class="lead text-success">(Blog selected)</span></label>
                 <select name="type" class="form-control" id="type">
