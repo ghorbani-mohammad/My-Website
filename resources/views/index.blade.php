@@ -50,7 +50,7 @@
 من <span class="text-danger" style="font-family: iransans;font-weight: bold;">زخم</span> دارم تو نمی فهمی 
 ... 
             </p>
-            <audio controls style="max-width:400px; width: 90%;">
+            <audio id="audio" controls style="max-width:400px; width: 90%;">
                 <source src="mp3/Shadmehr Aghili - Rabeteh 128.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
@@ -61,5 +61,7 @@
 @section('footer')
 <script>
     $("#home").addClass("active");
+    var vid = document.getElementById("audio");
+    vid.volume = 0.5;
 </script>
 @endsection
