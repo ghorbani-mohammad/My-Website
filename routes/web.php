@@ -13,7 +13,10 @@ use App\Comment;
 |
 */
 
-Route::view('/','index');
+// Route::view('/','index');
+Route::get('/',function(){
+    return redirect('about');
+});
 Route::view('/about','about');
 Route::get('/projects','PostController@projects');
 Route::view('/daftarMap','dMap');
