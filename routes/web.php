@@ -2,6 +2,7 @@
 
 use App\Post;
 use App\Comment;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,7 @@ use App\Comment;
 
 // Route::view('/','index');
 Route::get('/',function(){
-    return redirect('about');
+    return redirect('projects');
 });
 Route::view('/about','about');
 Route::get('/projects','PostController@projects');
@@ -32,3 +33,7 @@ Route::get('blog','PostController@index');
 
 Route::post('/posts/{post}/comments', 'CommentController@store');
 Route::post('/comments/bot.php', 'CommentController@control');
+
+Route::post('/foodBot/bot.php',function(){
+    return 0;
+});

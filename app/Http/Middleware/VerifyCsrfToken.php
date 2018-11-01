@@ -11,7 +11,7 @@ class VerifyCsrfToken extends Middleware
      *
      * @var array
      */
-    protected $except = [ '/comments/bot.php'
+    protected $except = [ '/comments/bot.php','/foodBot/bot.php'
         //
     ];
 }
