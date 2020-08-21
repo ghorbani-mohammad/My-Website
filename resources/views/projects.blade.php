@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="text-center">
-    <div class="alert alert-info my-5">Here i will speak about my projects that i have done in past or working on it currently.</div>
+    <div class="alert alert-info my-5">Here I will speak about my projects that I have done in past or working on it currently.</div>
     <div class="container my-5">
         <div class="post mb-5">
             <h1 class="display-4 text-left mb-5">A Project About Car Insurance Management System</h1>

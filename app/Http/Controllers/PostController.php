@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use \Log;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -10,14 +11,9 @@ use Illuminate\Support\Facades\Input;
 
 class PostController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+
+    public function index(Request $request)
     {
-        //
         if (Auth::check() && Auth::user()->role=='admin')
             $posts=Post::where('type','blog')->latest()->get();
         else
@@ -25,11 +21,6 @@ class PostController extends Controller
         return view('posts.index',compact('posts'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
@@ -42,12 +33,6 @@ class PostController extends Controller
         }
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $this->validate(request(),[
@@ -101,12 +86,6 @@ class PostController extends Controller
         return redirect('/posts/'.$post->link);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
     public function show($post)
     {
         $post=Post::where('link',$post)->first();
@@ -126,12 +105,6 @@ class PostController extends Controller
         }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
     public function edit($post)
     {
         if (Auth::check() && Auth::user()->role=='admin') 
@@ -144,13 +117,6 @@ class PostController extends Controller
         }
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request,$post)
     {
         //
@@ -206,12 +172,6 @@ class PostController extends Controller
         return redirect('/posts/'.$post->link);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($post)
     {
         //
@@ -227,12 +187,30 @@ class PostController extends Controller
             return redirect('/projects');
         }
     }
-    public function projects()
+
+    public function projects(Request $request)
     {
         if (Auth::check() && Auth::user()->role=='admin')
             $posts=Post::where('type','proj')->latest()->get();
         else
             $posts=Post::where('type','proj')->where('status','publish')->latest()->get();      
         return view('posts.projects',compact('posts'));
+    }
+
+    public function search(Request $request)
+    {
+        if (Auth::check() && Auth::user()->role=='admin')
+            $posts = Post::
+                    where('type','proj')->
+                    where('body', 'LIKE', '%'.$request['keywords'].'%')->
+                    orWhere('title', 'LIKE', '%'.$request['keywords'].'%')->
+                    latest()->get();
+        else
+            $posts = Post::
+                    where([['type','proj'], ['status','publish']])->
+                    where('body', 'LIKE', '%'.$request['keywords'].'%')->
+                    orWhere('title', 'LIKE', '%'.$request['keywords'].'%')->
+                    latest()->get();   
+        return view('posts.projects', compact('posts'));
     }
 }

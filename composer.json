@@ -5,10 +5,12 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.1.3",
+        "php": "^7.2",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "5.6.*",
-        "laravel/tinker": "^1.0"
+        "laravel/framework": "^6.0.0",
+        "laravel/helpers": "^1.2",
+        "laravel/tinker": "^1.0",
+        "protoqol/prequel": "^1.11"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
