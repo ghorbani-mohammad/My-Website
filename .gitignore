@@ -4,6 +4,8 @@
 /public/mp3
 /public/hot
 /public/storage
+/public/*.csv
+/public/*.pkl
 /storage/*.key
 /vendor
 /.idea
