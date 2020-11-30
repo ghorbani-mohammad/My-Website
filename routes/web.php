@@ -19,6 +19,7 @@ Route::get('/',function(){
     return redirect('projects');
 });
 Route::view('/about','about');
+Route::view('/contact','contact');
 Route::get('/projects','PostController@projects');
 Route::view('/daftarMap','dMap');
 Route::view('/kargahMap','kMap');

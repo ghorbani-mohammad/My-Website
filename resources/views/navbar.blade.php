@@ -10,17 +10,27 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
             <ul class="navbar-nav mr-auto">
-                <li id="home" class="nav-item">
+                <!-- <li id="home" class="nav-item">
                     <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li id="weblog" class="nav-item">
+                </li> -->
+                <!-- <li id="weblog" class="nav-item">
                     <a class="nav-link" href="/blog">Blog</a>
-                </li>
+                </li> -->
                 <li id="projects" class="nav-item">
                     <a class="nav-link" href="/projects">Projects</a>
                 </li>
+                <!-- <li class="nav-item">
+                    <a href="" class="align-middle nav-link">
+                        <i class="fab fa-linkedin-in"></i>  
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="align-middle nav-link">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li> -->
                 <li id="about" class="nav-item">
-                    <a class="nav-link" href="/about">About Me</a>
+                    <a class="nav-link" href="/contact">Contact Me</a>
                 </li>
             </ul>
             <form action="/search" method="post" class="form-inline my-2 my-lg-0">
