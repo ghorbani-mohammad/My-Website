@@ -21,16 +21,28 @@
         </div>
         <div class="col-12 col-sm-6 col-md-9 col-lg-10 mt-3" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             <p>
-                My name is Mohammad Ghorbani. I was born in 1994 (when creating this post I'm 26 years old).
+                <b>Name:</b> Mohammad Ghorbani
             </p>
             <p>
-                Currently I'm located in Iran/Tehran. I strated my professional work with PHP/LARVEL, but after 3 years I swithced to Python/Django.
+                <b>Birthday:</b> 04/24/1994
             </p>
             <p>
-                Email: <a href="mailto:ghorbani1994@gmail.com">ghorbani1994@gmail.com</a>
+                <b>Academic Degree:</b> Master of Computer Engineering
             </p>
             <p>
-                Linkdin: <a href="">https://www.linkedin.com/in/mohammad-ghorbani-303855105/</a>
+                <b>Location:</b> Iran/Tehran
+            </p>
+            <p>
+                <b>Expertises:</b> Django/Python Developer
+            </p>
+            <p>
+                <b>Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, PHP/Laravel, Bootstrap ...
+            </p>
+            <p>
+                <b>Email:</b> <a href="mailto:ghorbani1994@gmail.com">ghorbani1994@gmail.com</a>
+            </p>
+            <p>
+                <b>LinkedIn:</b> <a href="">https://www.linkedin.com/in/mohammad-ghorbani-303855105/</a>
             </p>
         </div>
     </div>
