@@ -27,7 +27,7 @@
                 <b>Birthday:</b> 04/24/1994
             </p>
             <p>
-                <b>Academic Degree:</b> Master of Computer Engineering
+                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir university of the Tehran
             </p>
             <p>
                 <b>Location:</b> Iran/Tehran
@@ -42,7 +42,10 @@
                 <b>Email:</b> <a href="mailto:ghorbani1994@gmail.com">ghorbani1994@gmail.com</a>
             </p>
             <p>
-                <b>LinkedIn:</b> <a href="">https://www.linkedin.com/in/mohammad-ghorbani-303855105/</a>
+                <b>LinkedIn:</b> <a href="">https://www.linkedin.com/in/gh-m/</a>
+            </p>
+            <p class="text-success font-weight-normal">
+                The source of this website is publicly available at <a href="https://gitlab.com/aali361/m-gh.info">Gitlab</a>.
             </p>
         </div>
     </div>
