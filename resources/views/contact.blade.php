@@ -42,10 +42,10 @@
                 <b>Email:</b> <a href="mailto:ghorbani1994@gmail.com">ghorbani1994@gmail.com</a>
             </p>
             <p>
-                <b>LinkedIn:</b> <a href="">https://www.linkedin.com/in/gh-m/</a>
+                <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/gh-m">https://www.linkedin.com/in/gh-m/</a>
             </p>
             <p>
-                <b>CV:</b> <a href="">https://www.m-gh.info/Resume.pdf</a>
+                <b>CV:</b> <a href="https://www.m-gh.info/Resume.pdf">https://www.m-gh.info/Resume.pdf</a>
             </p>
             <p class="text-success font-weight-normal">
                 The source of this website is publicly available at <a href="https://github.com/aali361/my-website">Github</a>.
