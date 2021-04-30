@@ -21,31 +21,31 @@
         </div>
         <div class="col-12 col-sm-6 col-md-9 col-lg-10 mt-3" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             <p>
-                <b>Name:</b> Mohammad Ghorbani
+                <b>Name:</b> Michael Ghorb
             </p>
             <p>
                 <b>Birthday:</b> 04/24/1994
             </p>
             <p>
-                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir university of the Tehran
+                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir university
             </p>
             <p>
-                <b>Location:</b> Iran/Tehran
+                <b>Location:</b> Turkey/Ankara
             </p>
             <p>
                 <b>Expertises:</b> Django/Python Developer
             </p>
             <p>
-                <b>Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, PHP/Laravel, Bootstrap ...
+                <b>Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
             </p>
             <p>
-                <b>Email:</b> <a href="mailto:ghorbani1994@gmail.com">ghorbani1994@gmail.com</a>
+                <b>Email:</b> <a href="mailto:michael.ghorb@gmail.com">michael.ghorb@gmail.com</a>
             </p>
             <p>
                 <b>LinkedIn:</b> <a href="">https://www.linkedin.com/in/gh-m/</a>
             </p>
             <p class="text-success font-weight-normal">
-                The source of this website is publicly available at <a href="https://gitlab.com/aali361/m-gh.info">Gitlab</a>.
+                The source of this website is publicly available at <a href="https://github.com/aali361/my-website">Github</a>.
             </p>
         </div>
     </div>

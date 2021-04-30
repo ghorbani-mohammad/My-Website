@@ -1,6 +1,6 @@
 <div class="mt-3 px-sm-5 px-0">
     <div class="row">  
-        <div class="col-3"><img class="img-fluid post-img" src="{{$post->mainImage}}"></div>
+        <div class="col-3"><img loading=lazy class="img-fluid post-img" src="{{$post->mainImage}}"></div>
         <div class="col-9 ">
             <a class="display-4 post-title" style="text-decoration: none;" href="/posts/{{$post->link}}">{{$post->title}}</a>
             <p class="mt-2">{{$post->description}}</p>
