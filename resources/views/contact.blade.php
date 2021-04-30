@@ -24,7 +24,7 @@
                 <b>Name:</b> Michael Ghorb
             </p>
             <p>
-                <b>Birthday:</b> 04/24/1994
+                <b>Age:</b> 27 Years Old
             </p>
             <p>
                 <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir university
