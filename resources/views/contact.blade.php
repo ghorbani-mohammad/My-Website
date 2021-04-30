@@ -21,7 +21,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-9 col-lg-10 mt-3" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             <p>
-                <b>Name:</b> Michael Ghorb
+                <b>Name:</b> Mohammad Ghorbani
             </p>
             <p>
                 <b>Age:</b> 27 Years Old
@@ -33,13 +33,13 @@
                 <b>Location:</b> Turkey/Ankara
             </p>
             <p>
-                <b>Expertises:</b> Django/Python Developer
+                <b>Expertise:</b> Django/Python Developer
             </p>
             <p>
                 <b>Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
             </p>
             <p>
-                <b>Email:</b> <a href="mailto:michael.ghorb@gmail.com">michael.ghorb@gmail.com</a>
+                <b>Email:</b> <a href="mailto:ghorbani1994@gmail.com">ghorbani1994@gmail.com</a>
             </p>
             <p>
                 <b>LinkedIn:</b> <a href="">https://www.linkedin.com/in/gh-m/</a>
