@@ -17,7 +17,7 @@
 @section('content')
     <div class="row mt-5 mb-5">
         <div class="col-12 col-sm-6 col-md-3 col-lg-2 text-center ">
-            <img class="figure-img img-fluid rounded" src="images/myPicture.jpg" alt="" width="200" height="200">
+            <img class="figure-img img-fluid rounded" src="images/myPicture2.jpg" alt="" width="200" height="200">
         </div>
         <div class="col-12 col-sm-6 col-md-9 col-lg-10 mt-3" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             <p>
