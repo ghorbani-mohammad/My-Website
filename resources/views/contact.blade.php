@@ -33,7 +33,7 @@
                 <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir University of Technology (Tehran)
             </p>
             <p>
-                <b>Main Expertise:</b> Python/Django Developer, AWS, Docker, Celery, django-rest-framework, Redis
+                <b>Main Expertise:</b> Python/Django Developer, AWS, Docker, Celery, DjangoRestFramework, Redis
             </p>
             <p>
                 <b>Other Experiences:</b> NLP, Fraud Detection, MongoDB, ElasticSearch, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
