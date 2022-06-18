@@ -30,7 +30,7 @@
                 <b>Age:</b> 28 Years Old
             </p>
             <p>
-                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir University of Technology (Tehran)
+                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir University of Technology (Tehran, Iran)
             </p>
             <p>
                 <b>Main Expertise:</b> Python/Django Developer, AWS, Docker, Celery, DjangoRestFramework, Redis
@@ -41,20 +41,9 @@
             <p>
                 <b>Email:</b> <a href="mailto:michael.ghorb@gmail.com">michael.ghorb@gmail.com</a>
             </p>
-            <p>
-                <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/gh-m">https://www.linkedin.com/in/gh-m/</a>
-            </p>
             <p class="text-success font-weight-normal">
                 The source of this website is publicly available at <a href="https://github.com/ghorbani-mohammad/my-website">Github</a>.
             </p>
-            <div class="template-demo">
-                <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
-                <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button>                                        
-                <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="fa fa-twitter"></i></button>
-                <button type="button" class="btn btn-social-icon btn-dribbble btn-rounded"><i class="fa fa-dribbble"></i></button>
-                <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded"><i class="fa fa-linkedin"></i></button>
-                <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button>
-            </div>
         </div>
     </div>
 @endsection
