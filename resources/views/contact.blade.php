@@ -21,25 +21,22 @@
         </div>
         <div class="col-12 col-sm-6 col-md-9 col-lg-10 mt-3" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             <p>
-                <b>Name:</b> Mohammad Ghorbani
+                <b>Full Name:</b> Mohammad (Michael) Ghorbani
             </p>
             <p>
-                <b>Age:</b> 27 Years Old
+                <b>Age:</b> 28 Years Old
             </p>
             <p>
                 <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir university
             </p>
             <p>
-                <b>Location:</b> Turkey/Ankara
+                <b>Main Expertise:</b> Python/Django Developer
             </p>
             <p>
-                <b>Expertise:</b> Django/Python Developer
+                <b>Other Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
             </p>
             <p>
-                <b>Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
-            </p>
-            <p>
-                <b>Email:</b> <a href="mailto:ghorbani1994@gmail.com">ghorbani1994@gmail.com</a>
+                <b>Email:</b> <a href="mailto:michael.ghorb@gmail.com">michael.ghorb@gmail.com</a>
             </p>
             <p>
                 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/gh-m">https://www.linkedin.com/in/gh-m/</a>
