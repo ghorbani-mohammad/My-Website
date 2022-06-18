@@ -47,6 +47,12 @@
             <p class="text-success font-weight-normal">
                 The source of this website is publicly available at <a href="https://github.com/ghorbani-mohammad/my-website">Github</a>.
             </p>
+            <div>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
         </div>
     </div>
 @endsection
