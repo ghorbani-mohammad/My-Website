@@ -21,7 +21,10 @@
         </div>
         <div class="col-12 col-sm-6 col-md-9 col-lg-10 mt-3" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             <p>
-                <b>Full Name:</b> Mohammad (Michael) Ghorbani
+                <b>Full Name:</b> Mohammad Ghorbani
+            </p>
+            <p>
+                <b>English Name (preferred):</b> Michael
             </p>
             <p>
                 <b>Age:</b> 28 Years Old
@@ -33,7 +36,7 @@
                 <b>Main Expertise:</b> Python/Django Developer, AWS, Docker, Celery, django-rest-framework, Redis
             </p>
             <p>
-                <b>Other Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
+                <b>Other Experiences:</b> NLP, Fraud Detection, MongoDB, ElasticSearch, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
             </p>
             <p>
                 <b>Email:</b> <a href="mailto:michael.ghorb@gmail.com">michael.ghorb@gmail.com</a>
@@ -42,7 +45,7 @@
                 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/gh-m">https://www.linkedin.com/in/gh-m/</a>
             </p>
             <p class="text-success font-weight-normal">
-                The source of this website is publicly available at <a href="https://github.com/aali361/my-website">Github</a>.
+                The source of this website is publicly available at <a href="https://github.com/ghorbani-mohammad/my-website">Github</a>.
             </p>
         </div>
     </div>
