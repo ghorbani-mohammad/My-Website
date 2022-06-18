@@ -27,10 +27,10 @@
                 <b>Age:</b> 28 Years Old
             </p>
             <p>
-                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir university
+                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir University of Technology (Tehran)
             </p>
             <p>
-                <b>Main Expertise:</b> Python/Django Developer
+                <b>Main Expertise:</b> Python/Django Developer, AWS, Docker, Celery, django-rest-framework, Redis
             </p>
             <p>
                 <b>Other Experiences:</b> NLP, Fraud Detection, ML Algorithms, Docker, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
@@ -40,9 +40,6 @@
             </p>
             <p>
                 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/gh-m">https://www.linkedin.com/in/gh-m/</a>
-            </p>
-            <p>
-                <b>CV:</b> <a href="https://www.m-gh.info/Resume.pdf">https://www.m-gh.info/Resume.pdf</a>
             </p>
             <p class="text-success font-weight-normal">
                 The source of this website is publicly available at <a href="https://github.com/aali361/my-website">Github</a>.
