@@ -27,7 +27,7 @@
                 <b>English Name (preferred):</b> Michael
             </p>
             <p>
-                <b>Age:</b> 28 Years Old
+                <b>Born:</b> 1994
             </p>
             <p>
                 <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir University of Technology (Tehran, Iran)
