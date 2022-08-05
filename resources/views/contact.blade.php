@@ -39,7 +39,7 @@
                 <b>Other Experiences:</b> NLP, Fraud Detection, MongoDB, ElasticSearch, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
             </p>
             <p>
-                <b>Email:</b> <a href="mailto:michael.ghorb@gmail.com">michael.ghorb@gmail.com</a>
+                <b>Email:</b> <a href="mailto:mohammad.ghorbani@hotmail.com">mohammad.ghorbani@hotmail.com</a>
             </p>
             <p class="text-success font-weight-normal">
                 The source of this website is publicly available at <a href="https://github.com/ghorbani-mohammad/my-website">Github</a>.
