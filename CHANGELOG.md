@@ -1,4 +1,13 @@
-# 0.1.0 (2022-08-05)
+# [0.2.0](https://github.com/ghorbani-mohammad/my-website/compare/v0.1.0...v0.2.0) (2022-11-11)
+
+
+### Features
+
+* add docker configurations ([f48f183](https://github.com/ghorbani-mohammad/my-website/commit/f48f18340ce3fd7c57c1fec63281096c0122215a))
+
+
+
+# [0.1.0](https://github.com/ghorbani-mohammad/my-website/compare/8fa9eb4307ff1663bd2e1d9c4b1d596fba6a3c4d...v0.1.0) (2022-08-05)
 
 
 ### Features
