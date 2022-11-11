@@ -1,0 +1,10 @@
+services:
+  main:
+    container_name: my_website
+    build: .
+    command: ["php", "artisan", "serve", "--host=0.0.0.0", "--port=9001"]
+    #command: ["php-fpm"]
+    volumes:
+      - .:/app
+    ports:
+      - 9001:9001
