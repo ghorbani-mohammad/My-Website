@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/ghorbani-mohammad/my-website/compare/v0.2.0...v1.1.0) (2022-11-11)
+
+
+### Features
+
+* increase main version ([1eb0cab](https://github.com/ghorbani-mohammad/my-website/commit/1eb0cab6ec1257f067eb01cca46dda34cc89c030))
+
+
+
 # [0.2.0](https://github.com/ghorbani-mohammad/my-website/compare/v0.1.0...v0.2.0) (2022-11-11)
 
 
