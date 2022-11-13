@@ -12,5 +12,3 @@ RUN composer update --with-all-dependencies
 RUN composer install
 RUN composer dump-autoload
 RUN composer update
-EXPOSE 9001
-CMD ["php-fpm"]
