@@ -4,6 +4,6 @@ services:
     build: .
     command: ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8200"]
     volumes:
-      - .:/app
+      - .:/var/www/mo-ghorbani.ir
     ports:
       - "8000:8200"
