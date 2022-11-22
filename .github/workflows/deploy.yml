@@ -15,8 +15,8 @@ jobs:
         with:
           host: ${{secrets.IP}}
           port: ${{secrets.PORT}}
-          username: ${{secrets.USERNAME}}
           key: ${{secrets.SSHKEY}}
+          username: ${{secrets.USERNAME}}
           script: >
             cd ${{secrets.PROJECT_PATH}} 
             && git pull
