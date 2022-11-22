@@ -1,4 +1,31 @@
-# 0.1.0 (2022-08-05)
+## [1.1.1](https://github.com/ghorbani-mohammad/my-website/compare/v1.1.0...v1.1.1) (2022-11-13)
+
+
+### Bug Fixes
+
+* update email address ([89f3af0](https://github.com/ghorbani-mohammad/my-website/commit/89f3af0e0c400d1b2160d08f10416f8771ae26b3))
+
+
+
+# [1.1.0](https://github.com/ghorbani-mohammad/my-website/compare/v0.2.0...v1.1.0) (2022-11-11)
+
+
+### Features
+
+* increase main version ([1eb0cab](https://github.com/ghorbani-mohammad/my-website/commit/1eb0cab6ec1257f067eb01cca46dda34cc89c030))
+
+
+
+# [0.2.0](https://github.com/ghorbani-mohammad/my-website/compare/v0.1.0...v0.2.0) (2022-11-11)
+
+
+### Features
+
+* add docker configurations ([f48f183](https://github.com/ghorbani-mohammad/my-website/commit/f48f18340ce3fd7c57c1fec63281096c0122215a))
+
+
+
+# [0.1.0](https://github.com/ghorbani-mohammad/my-website/compare/8fa9eb4307ff1663bd2e1d9c4b1d596fba6a3c4d...v0.1.0) (2022-08-05)
 
 
 ### Features
