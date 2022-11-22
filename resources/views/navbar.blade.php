@@ -13,9 +13,6 @@
                 <!-- <li id="home" class="nav-item">
                     <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
                 </li> -->
-                <li id="weblog" class="nav-item">
-                    <a class="nav-link" href="/blog">Download My Resume</a>
-                </li>
                 <li id="projects" class="nav-item">
                     <a class="nav-link" href="/projects">Projects</a>
                 </li>
@@ -28,5 +25,6 @@
                 <input name="keywords" class="form-control mr-sm-2" type="search" placeholder="like: python or django" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
+            <button class="btn btn-info my-2 my-sm-0">My Resume</button>
         </div>
     </nav>
