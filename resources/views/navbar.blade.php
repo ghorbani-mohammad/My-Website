@@ -19,16 +19,6 @@
                 <li id="projects" class="nav-item">
                     <a class="nav-link" href="/projects">Projects</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a href="" class="align-middle nav-link">
-                        <i class="fab fa-linkedin-in"></i>  
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="align-middle nav-link">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </li> -->
                 <li id="about" class="nav-item">
                     <a class="nav-link" href="/contact">Contact Me</a>
                 </li>
