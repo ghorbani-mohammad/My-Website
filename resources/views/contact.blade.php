@@ -39,10 +39,10 @@
                 <b>Other Experiences:</b> NLP, Fraud Detection, MongoDB, ElasticSearch, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
             </p>
             <p>
-                <b>Email:</b><a href="mailto:moohammad.ghoorbani@gmail.com">moohammad.ghoorbani@gmail.com</a>
+                <b>Email: </b><a href="mailto:moohammad.ghoorbani@gmail.com">moohammad.ghoorbani@gmail.com</a>
             </p>
             <p>
-                <b>Resume:</b><a href="https://www.m-gh.com/">Download</a>
+                <b>Resume: </b><a href="https://www.m-gh.com/">Download</a>
             </p>
             <p class="text-success font-weight-normal">
                 The source of this website is publicly available at <a href="https://github.com/ghorbani-mohammad/my-website">Github</a>.
