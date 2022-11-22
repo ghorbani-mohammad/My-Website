@@ -19,5 +19,5 @@ jobs:
           username: ${{secrets.USERNAME}}
           script: >
             cd ${{secrets.PROJECT_PATH}} 
-            && git pull
-            && docker-compose up --build
+            && git pull 
+            && docker-compose up -d --build
