@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/ghorbani-mohammad/my-website/compare/v1.1.0...v1.1.1) (2022-11-13)
+
+
+### Bug Fixes
+
+* update email address ([89f3af0](https://github.com/ghorbani-mohammad/my-website/commit/89f3af0e0c400d1b2160d08f10416f8771ae26b3))
+
+
+
 # [1.1.0](https://github.com/ghorbani-mohammad/my-website/compare/v0.2.0...v1.1.0) (2022-11-11)
 
 
