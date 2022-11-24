@@ -24,7 +24,7 @@
                 <b>Full Name:</b> Mohammad Ghorbani
             </p>
             <p>
-                <b>English Name (preferred):</b> Michael
+                <b>English Name (preferred):</b> Mike
             </p>
             <p>
                 <b>Born:</b> 1994
