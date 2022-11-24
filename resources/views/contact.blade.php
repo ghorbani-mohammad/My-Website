@@ -30,7 +30,7 @@
                 <b>Born:</b> 1994
             </p>
             <p>
-                <b>Academic Degree:</b> Master of Computer Engineering from Amirkabir University of Technology (Tehran, Iran)
+                <b>Academic Degree:</b> Master of Computer Engineering from <a href="https://aut.ac.ir/en">Amirkabir University of Technology</a> (Tehran, Iran)
             </p>
             <p>
                 <b>Main Expertise:</b> Python/Django Developer, AWS, Docker, Celery, DjangoRestFramework, Redis
