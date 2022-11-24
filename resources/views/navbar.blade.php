@@ -20,9 +20,9 @@
                     <a class="nav-link" href="/contact">Contact Me</a>
                 </li>
                 <li>
-                    <button class="btn btn-success">
-                        <a class="nav-link" href="/Mohammad_resume_.pdf">Download CV</a>
-                    </button>
+                    <a type="button" class="nav-link btn btn-success" href="/Mohammad_resume_.pdf">
+                        Download CV
+                    </a>
                 </li>
             </ul>
             <form action="/search" method="post" class="form-inline my-2 my-lg-0">
