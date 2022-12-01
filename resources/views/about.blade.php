@@ -29,7 +29,7 @@
             <br>
             <p class="lead-5 text-center">As a resume, a website will have great impact on recruiter.</p>
             <br>
-            <p class="figure-caption">Another reason that come to my mind is that i will try to publish my things in English (mostly!) so it will help me to improve my English Writing.</p>
+            <p class="figure-caption">Another reason that come to my mind is that I will try to publish my things in English (mostly!) so it will help me to improve my English Writing.</p>
             <br>
             <p class="lead-5 text-center">Improve English Writing is another reason to creating this website.</p>
             <br>
