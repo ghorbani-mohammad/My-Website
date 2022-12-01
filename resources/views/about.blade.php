@@ -25,7 +25,7 @@
             <br>
             <p class="lead-5 text-center">This website will help me to find more peopole like myself.</p>
             <br>
-            <p class="figure-caption">The most important reason that i like to mention is that i will share my projects in past, current and even in future on this website. So as a resume this website will help me to demonstrate my skills to recruiter.</p>
+            <p class="figure-caption">The most important reason that i like to mention is that I will share my projects in past, current and even in future on this website. So as a resume this website will help me to demonstrate my skills to recruiter.</p>
             <br>
             <p class="lead-5 text-center">As a resume, a website will have great impact on recruiter.</p>
             <br>
