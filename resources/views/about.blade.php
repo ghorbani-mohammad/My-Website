@@ -31,7 +31,7 @@
             <br>
             <p class="figure-caption">Another reason that come to my mind is that I will try to publish my things in English (mostly!) so it will help me to improve my English Writing.</p>
             <br>
-            <p class="lead-5 text-center">Improve English Writing is another reason to creating this website.</p>
+            <p class="lead-5 text-center">Improve English writing is another reason to creating this website.</p>
             <br>
             <p class="figure-caption">Probably you will say "Do you ever heard about Facebook or Twitter?" You are right! But you know what? I am a programmer (skillful one :/) and I want to have my own stuff.</p>
             <p class="figure-caption mb-5">Ok, it's look like this section is not only about me but is about me and this website.</p>
