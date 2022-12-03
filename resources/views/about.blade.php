@@ -21,7 +21,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-9 col-lg-10 mt-3" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             <p class="figure-caption">My name is Mohammad Ghorbani. I was born in a small city called Tafresh. My birth date is 24 April 1994. I have just one brother so we are small family but Lovely one :). I studied Computer Engineering (CE) at Amirkabir University. I'm keen to learn new things in computer science and electronic fields. My favorite sports are swimming and hiking. I wish I could have positive impact on my country as an individual.</p>
-            <p class="figure-caption">I created this website to register my thoughts and my projects. It has some dark sides but it has also some benefits as so. The important thing that convinced me to start this website is that it can help me to find people similar to myself so i will not waste my time with wrong person (in similarity prospect).</p>
+            <p class="figure-caption">I created this website to register my thoughts and my projects. It has some dark sides but it has also some benefits as so. The important thing that convinced me to start this website is that it can help me to find people similar to myself so I will not waste my time with wrong person (in similarity prospect).</p>
             <br>
             <p class="lead-5 text-center">This website will help me to find more people like myself.</p>
             <br>
