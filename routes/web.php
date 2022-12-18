@@ -16,7 +16,7 @@ use App\Comment;
 
 // Route::view('/','index');
 Route::get('/',function(){
-    return redirect('projects');
+    return redirect('contact');
 });
 Route::view('/about','about');
 Route::view('/contact','contact');
