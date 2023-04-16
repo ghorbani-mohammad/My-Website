@@ -6,5 +6,5 @@ services:
     volumes:
       - .:/var/www/mo-ghorbani.ir
     ports:
-      - "8000:8200"
+      - "8200:8200"
     restart: unless-stopped
