@@ -1,10 +1,27 @@
 services:
-  main:
-    container_name: my_website
+  mgh_app:
+    container_name: mgh_app
     build: .
     command: ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8200"]
+    networks:
+      - mgh
     volumes:
       - .:/var/www/mo-ghorbani.ir
     ports:
       - 127.0.0.1:8200:8200
     restart: unless-stopped
+
+  mysql:
+    image: mysql:8.0.32
+    container_name: mgh_mysql
+    command: --default-authentication-plugin=mysql_native_password
+    env_file:
+      - .env
+    volumes:
+      - ./mgh_db_volume/:/var/lib/mysql
+    networks:
+      - mgh
+    restart: unless-stopped
+
+networks:
+  mgh:
