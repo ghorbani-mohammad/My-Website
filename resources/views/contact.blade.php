@@ -36,7 +36,7 @@
                 <b>Main Expertise:</b> Python/Django Developer, AWS, Docker, Celery, DjangoRestFramework, Redis
             </p>
             <p>
-                <b>Other Experiences:</b> NLP, Fraud Detection, MongoDB, ElasticSearch, Kubernetes, Azure, PHP/Laravel, Bootstrap ...
+                <b>Other Experiences:</b> NLP, Fraud Detection, MongoDB, ElasticSearch, Kubernetes, Azure, PHP/Laravel, Bootstrap.
             </p>
             <p>
                 <b>Email: </b><a href="mailto:moohammad.ghoorbani@gmail.com">moohammad.ghoorbani@gmail.com</a>
