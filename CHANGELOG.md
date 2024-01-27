@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/ghorbani-mohammad/My-Website/compare/v1.2.0...v1.3.0) (2024-01-27)
+
+
+### Features
+
+* **about:** adds company link ([92c86cb](https://github.com/ghorbani-mohammad/My-Website/commit/92c86cbf1506cf100c3590eaa3c7acfd756dff94))
+
+
+
 # [1.2.0](https://github.com/ghorbani-mohammad/My-Website/compare/v1.1.1...v1.2.0) (2022-11-22)
 
 
@@ -31,23 +40,6 @@
 ### Features
 
 * add docker configurations ([f48f183](https://github.com/ghorbani-mohammad/My-Website/commit/f48f18340ce3fd7c57c1fec63281096c0122215a))
-
-
-
-# [0.1.0](https://github.com/ghorbani-mohammad/My-Website/compare/8fa9eb4307ff1663bd2e1d9c4b1d596fba6a3c4d...v0.1.0) (2022-08-05)
-
-
-### Features
-
-* add release ([cd79819](https://github.com/ghorbani-mohammad/My-Website/commit/cd7981930e6141343aabc77ade3ff769a5a8b383))
-* add social section ([80864e0](https://github.com/ghorbani-mohammad/My-Website/commit/80864e05cc36eb852f66ff2a37c6d146501692c2))
-* minor change ([6c5b9cf](https://github.com/ghorbani-mohammad/My-Website/commit/6c5b9cf5e44a9383ba3d0aa3900f21d77f16979b))
-* rm linkedin link ([9381819](https://github.com/ghorbani-mohammad/My-Website/commit/9381819ac2c3c5467aec14a6f0a6f6b6a9b364b8))
-* update contact ([988176e](https://github.com/ghorbani-mohammad/My-Website/commit/988176efed003caef395cb3703c74237b2a0eeea))
-* update contact ([88926d6](https://github.com/ghorbani-mohammad/My-Website/commit/88926d65aa5313fa0d98a0b24b2c02e82fda871d))
-* update contact me section ([3c43715](https://github.com/ghorbani-mohammad/My-Website/commit/3c4371553c08a08e32aca631abb7aa75429f1686))
-* update contact page ([8fa9eb4](https://github.com/ghorbani-mohammad/My-Website/commit/8fa9eb4307ff1663bd2e1d9c4b1d596fba6a3c4d))
-* update my picture ([646f7aa](https://github.com/ghorbani-mohammad/My-Website/commit/646f7aa4f05199f1952e111caefc9c96afc67dac))
 
 
 
