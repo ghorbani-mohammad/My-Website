@@ -45,7 +45,7 @@
                 <b>Resume: </b><a href="https://www.m-gh.com/Mohammad_Resume_.pdf">Download</a>
             </p>
             <p class="text-success font-weight-normal">
-                The source of this website is available at <a href="https://github.com/ghorbani-mohammad/my-website">Github</a>.
+                The source of this website is available at <a href="https://github.com/ghorbani-mohammad/my-website">GitHub</a>.
             </p>
         </div>
     </div>
