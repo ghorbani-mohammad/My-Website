@@ -24,7 +24,7 @@
                 <b>Full Name:</b> Mohammad Ghorbani
             </p>
             <p>
-                <b>English Name (preferred):</b> Mike
+                <b>English Name:</b> Mo
             </p>
             <p>
                 <b>Working In: </b><a href="https://www.agflow.com">AgFlow</a>
@@ -39,7 +39,7 @@
                 <b>Other Experiences:</b> NLP, Fraud Detection, MongoDB, ElasticSearch, Kubernetes, Azure, PHP/Laravel, Bootstrap.
             </p>
             <p>
-                <b>Email: </b><a href="mailto:moohammad.ghoorbani@gmail.com">moohammad.ghoorbani@gmail.com</a>
+                <b>Email: </b><a href="mailto:mo.ghorb@gmail.com">mo.ghorb@gmail.com</a>
             </p>
             <p>
                 <b>Resume: </b><a href="https://www.m-gh.com/Mohammad_Resume_.pdf">Download</a>
