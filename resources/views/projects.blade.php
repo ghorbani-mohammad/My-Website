@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="text-center">
-    <div class="alert alert-info my-5">Here I will speak about my projects that I have done in past or working on it currently.</div>
+    <div class="alert alert-info my-5">For seeing the total list of my projects, please check my <a href="https://github.com/ghorbani-mohammad" target="_blank" class="alert-link">GitHub account</a>.</div>
     <div class="container my-5">
         <div class="post mb-5">
             <h1 class="display-4 text-left mb-5">A Project About Car Insurance Management System</h1>
