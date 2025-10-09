@@ -45,13 +45,13 @@
                 <b>LinkedIn: </b><a href="https://www.linkedin.com/in/mm-gh/" target="_blank">mm-gh</a>
             </p>
             <p>
-                <b>GitHub: </b><a href="https://github.com/ghorbani-mohammad" target="_blank">ghorbani-mohammad</a>
+                <b>GitHub: </b><a href="https://github.com/moo-gh" target="_blank">moo-gh</a>
             </p>
-            <p>
+            <p> 
                 <b>Resume: </b><a href="https://www.m-gh.com/Mohammad_Resume_.pdf">Download</a>
             </p>
             <p class="text-success font-weight-normal">
-                The source of this website is available at <a href="https://github.com/ghorbani-mohammad/my-website">GitHub</a>.
+                The source of this website is available at <a href="https://github.com/moo-gh/my-website">GitHub</a>.
             </p>
         </div>
     </div>
