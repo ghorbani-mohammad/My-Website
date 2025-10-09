@@ -42,7 +42,7 @@
                 <b>Email: </b><a href="mailto:mo.ghorb@gmail.com">mo.ghorb@gmail.com</a>
             </p>
             <p>
-                <b>LinkedIn: </b><a href="https://www.linkedin.com/in/moh-gho/" target="_blank">moh-gho</a>
+                <b>LinkedIn: </b><a href="https://www.linkedin.com/in/mm-gh/" target="_blank">mm-gh</a>
             </p>
             <p>
                 <b>GitHub: </b><a href="https://github.com/ghorbani-mohammad" target="_blank">ghorbani-mohammad</a>
