@@ -29,9 +29,6 @@
             <p>
                 <b>Previously worked at: </b><a href="https://www.agflow.com">AgFlow</a>
             </p>
-            <p class="text-info font-weight-bold">
-                📬 Open to new opportunities and offers!
-            </p>
             <p>
                 <b>Academic Degree:</b> Master of Computer Engineering from <a href="https://aut.ac.ir/en">Amirkabir University of Technology</a> (Tehran, Iran)
             </p>
