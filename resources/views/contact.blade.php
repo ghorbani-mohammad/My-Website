@@ -27,7 +27,7 @@
                 <b>English Name:</b> Mo
             </p>
             <p>
-                <b>Academic Degree:</b> Master of Computer Engineering from <a href="https://aut.ac.ir/en">Amirkabir University of Technology</a> (Tehran, Iran)
+                <b>Academic Degree:</b> Master's degree in Computer Engineering from <a href="https://aut.ac.ir/en">Amirkabir University of Technology</a> (Tehran, Iran)
             </p>
             <p>
                 <b>Main Expertise:</b> Python/Django, AWS, Docker, Celery, DjangoRestFramework, Redis.
