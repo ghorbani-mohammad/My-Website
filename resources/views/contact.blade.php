@@ -39,7 +39,7 @@
                 <b>Email: </b><a href="mailto:mo.ghorb@gmail.com">mo.ghorb@gmail.com</a>
             </p>
             <p>
-                <b>LinkedIn: </b><a href="https://www.linkedin.com/in/mm-gh/" target="_blank">mm-gh</a>
+                <b>LinkedIn: </b><a href="https://www.linkedin.com/in/gh-m/" target="_blank">gh-m</a>
             </p>
             <p>
                 <b>GitHub: </b><a href="https://github.com/moo-gh" target="_blank">moo-gh</a>
